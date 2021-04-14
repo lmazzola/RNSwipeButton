@@ -57,6 +57,12 @@ const SwipeThumb = props => {
   useEffect(() => {
     forceReset && forceReset(reset);
   }, [forceReset]);
+  
+   useEffect(() => {
+    if(props.swipeToEnd){
+      finishRemainingSwipe();
+    }
+  }, []);
 
   function onSwipeNotMetSuccessThreshold() {
     // Animate to initial position
@@ -286,6 +292,7 @@ SwipeThumb.propTypes = {
   ]),
   thumbIconStyles: PropTypes.object,
   title: PropTypes.string,
+  swipeToEnd: PropTypes.bool,
 };
 
 export default SwipeThumb;
