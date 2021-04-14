@@ -21,6 +21,7 @@ const SwipeThumb = props => {
   const paddingAndMarginsOffset = borderWidth + 2 * margin;
   const defaultContainerWidth = props.iconSize;
   const forceReset = props.forceReset;
+  const swipeToEnd = props.swipeToEnd;
   const maxWidth = props.layoutWidth - paddingAndMarginsOffset;
   const isRTL = I18nManager.isRTL;
 
@@ -59,7 +60,7 @@ const SwipeThumb = props => {
   }, [forceReset]);
   
    useEffect(() => {
-    if(props.swipeToEnd){
+    if(swipeToEnd) {
       finishRemainingSwipe();
     }
   }, []);
