@@ -98,7 +98,7 @@ const SwipeButton = props => {
     titleFontSize,
     titleStyles,
     width,
-    swipeToEnd
+    swipeToEnd,
   } = props;
   return (
     <View
