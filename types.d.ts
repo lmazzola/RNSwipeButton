@@ -31,6 +31,7 @@ interface Props {
     titleFontSize?: number;
     titleStyles?: StyleProp<TextStyle>;
     width?: string | number;
+    swipeToEnd?: boolean
 }
 
 interface State {
