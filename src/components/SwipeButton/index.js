@@ -223,6 +223,7 @@ SwipeButton.propTypes = {
   titleFontSize: PropTypes.number,
   titleStyles: PropTypes.object,
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  swipeToEnd: PropTypes.bool,
 };
 
 export default SwipeButton;
