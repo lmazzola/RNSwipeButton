@@ -98,6 +98,7 @@ const SwipeButton = props => {
     titleFontSize,
     titleStyles,
     width,
+    swipeToEnd
   } = props;
   return (
     <View
@@ -154,6 +155,7 @@ const SwipeButton = props => {
           thumbIconImageSource={thumbIconImageSource}
           thumbIconStyles={thumbIconStyles}
           title={title}
+          swipeToEnd={swipeToEnd}
         />
       )}
     </View>
