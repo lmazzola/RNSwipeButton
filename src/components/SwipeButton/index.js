@@ -182,6 +182,7 @@ SwipeButton.defaultProps = {
   titleColor: TITLE_COLOR,
   titleFontSize: 20,
   titleStyles: {},
+  swipeToEnd: false
 };
 
 SwipeButton.propTypes = {
