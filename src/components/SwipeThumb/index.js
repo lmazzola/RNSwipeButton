@@ -60,10 +60,10 @@ const SwipeThumb = props => {
   }, [forceReset]);
   
    useEffect(() => {
-    if(swipeToEnd) {
+     if(props.swipeToEnd){
       finishRemainingSwipe();
-    }
-  }, []);
+     }
+  }, [props.swipeToEnd]);
 
   function onSwipeNotMetSuccessThreshold() {
     // Animate to initial position
